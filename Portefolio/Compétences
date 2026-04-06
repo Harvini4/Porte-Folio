@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - SOUCE Harvini</title>
+  <meta name="description" content="Portfolio of SOUCE Harvini - IT skills in networking and development.">
+
+  <style>
+    /* ===== GLOBAL ===== */
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background: #fff;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+    }
+
+    a { text-decoration: none; transition: 0.3s; }
+    a:hover { color: #b5a400; }
+
+    /* ===== GLITTER TITLES ===== */
+    .glitter-text {
+      background: linear-gradient(90deg, #b8860b, #ffd700, #fff1a8, #ffd700, #b8860b);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glitter 3s infinite linear;
+    }
+
+    @keyframes glitter {
+      0% { background-position: 0%; }
+      100% { background-position: 300%; }
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 10%;
+      flex-wrap: wrap;
+    }
+
+    header .logo img { width: 80px; height: 80px; border-radius: 50%; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav a { color: #fff; font-weight: 600; }
+    nav a:hover { color: #DECE31; }
+
+    .lang-btn {
+      background: #DECE31;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .lang-btn:hover { background: #b5a400; color: #fff; }
+
+    /* ===== MAIN ===== */
+    main { padding: 50px 10%; }
+    main section { margin-bottom: 50px; }
+    main h2 {
+      font-size: 1.6rem;
+      border-left: 5px solid #DECE31;
+      padding-left: 10px;
+      margin-bottom: 30px;
+    }
+
+    /* ===== SKILLS ===== */
+    .competences-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .competences-colonne h3 {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .competence {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 18px;
+      text-align: center;
+      border: 1px solid #ffd70055;
+      transition: 0.3s;
+    }
+    .competence:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(255,215,0,0.25);
+      border-color: #ffd700;
+    }
+
+    .competence img { max-height: 55px; margin-bottom: 10px; }
+
+    .bar {
+      background: #e5e7eb;
+      border-radius: 5px;
+      height: 10px;
+      max-width: 300px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #b8860b, #ffd700, #fff1a8);
+      width: 0;
+      animation: fillBar 1s forwards;
+    }
+
+    @keyframes fillBar { to { width: var(--width); } }
+
+    /* ===== SUMMARY TABLE ===== */
+    .tableau {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ffd70055;
+    }
+
+    .tableau embed {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) { .competences-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/SOUCE.jpg" alt="Photo of SOUCE Harvini">
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="Accueil" class="menu-link">Home</a></li>
+      <li><a href="Parcours_formation" class="menu-link">Education & Training</a></li>
+      <li><a href="Compétences" class="menu-link">Skills</a></li>
+      <li><a href="Projets" class="menu-link">Projects</a></li>
+      <li><a href="Veille" class="menu-link">Technology Watch</a></li>
+      <li><a href="Contact" class="menu-link">Contact</a></li>
+
+      <li>
+       <li><a href="Fr/Accueil" class="lang-btn">Français</a></li>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main id="Competences">
+
+  <section>
+    <h2 class="glitter-text">IT Skills</h2>
+    <div class="competences-grid">
+
+      <div class="competences-colonne">
+        <h3 class="glitter-text">Networking</h3>
+
+        <div class="competence">
+          <img src="images/reseau.jpg" alt="Network">
+          <div class="bar"><div class="bar-fill" style="--width:50%"></div></div>
+        </div>
+
+        <div class="competence">
+          <img src="images/router.png" alt="Router and switch configuration">
+          <p>Router and switch configuration</p>
+          <div class="bar"><div class="bar-fill" style="--width:65%"></div></div>
+        </div>
+
+        <div class="competence">
+          <img src="images/router.png" alt="IP management">
+          <p>IP address and subnet management</p>
+          <div class="bar"><div class="bar-fill" style="--width:70%"></div></div>
+        </div>
+      </div>
+
+      <div class="competences-colonne">
+        <h3 class="glitter-text">Development</h3>
+
+        <div class="competence">
+          <img src="images/sql.png" alt="SQL">
+          <div class="bar"><div class="bar-fill" style="--width:70%"></div></div>
+        </div>
+
+        <div class="competence">
+          <img src="images/BDD.png" alt="Database">
+          <div class="bar"><div class="bar-fill" style="--width:90%"></div></div>
+        </div>
+
+        <div class="competence">
+          <img src="images/java.svg" alt="Java">
+          <div class="bar"><div class="bar-fill" style="--width:90%"></div></div>
+        </div>
+
+        <div class="competence">
+          <img src="images/php.png" alt="PHP">
+          <div class="bar"><div class="bar-fill" style="--width:80%"></div></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="glitter-text">Summary Table</h2>
+    <div class="tableau">
+      <embed src="images/Synthese.pdf" type="application/pdf">
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

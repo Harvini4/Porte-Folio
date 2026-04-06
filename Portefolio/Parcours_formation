@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education & Training - SOUCE Harvini</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff;
+      color: #fff;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      transition: 0.3s;
+      color: #fff;
+    }
+
+    a:hover {
+      color: #DECE31;
+    }
+
+    .glitter-text {
+      background: linear-gradient(90deg, #b8860b, #ffd700, #fff1a8, #ffd700, #b8860b);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glitter 3s infinite linear;
+    }
+
+    @keyframes glitter {
+      0% { background-position: 0%; }
+      100% { background-position: 300%; }
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 10%;
+      flex-wrap: wrap;
+    }
+
+    header .logo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #DECE31;
+    }
+
+    .lang-btn {
+      background: #DECE31;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .lang-btn:hover {
+      background: #b5a400;
+      color: #fff;
+    }
+
+    main {
+      padding: 40px 10%;
+      text-align: center;
+    }
+
+    main h2 {
+      margin-bottom: 40px;
+      font-size: 26px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .small-col {
+      max-width: 400px;
+    }
+
+    .card-small {
+      background: #000;
+      color: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      border: 1px solid #ffd70055;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card-small:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+      border-color: #ffd700;
+    }
+
+    .card-small h3 {
+      color: #DECE31;
+      margin-bottom: 15px;
+    }
+
+    .card-small p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .full-card {
+      background: #000;
+      color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid #ffd70055;
+      margin-bottom: 40px;
+    }
+
+    .full-card h3 {
+      color: #DECE31;
+      margin-bottom: 20px;
+    }
+
+    .pdf-embed {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/SOUCE.jpg" alt="Photo of SOUCE Harvini">
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="Accueil" class="menu-link">Home</a></li>
+      <li><a href="Parcours_formation" class="menu-link">Education & Training</a></li>
+      <li><a href="Compétences" class="menu-link">Skills</a></li>
+      <li><a href="Projets" class="menu-link">Projects</a></li>
+      <li><a href="Veille" class="menu-link">Technology Watch</a></li>
+      <li><a href="Contact" class="menu-link">Contact</a></li>
+
+      <li>
+       <li><a href="Fr/Accueil" class="lang-btn">Français</a></li>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- EDUCATION -->
+  <h2 class="glitter-text">Education</h2>
+  <div class="row">
+    <div class="col small-col">
+      <div class="card-small">
+        <h3>BTS SIO – SLAM Option</h3>
+        <p><strong>IRIS School</strong> (2025 – 2026)</p>
+        <p>Learning software development, network administration, cybersecurity and application design.</p>
+      </div>
+    </div>
+
+    <div class="col small-col">
+      <div class="card-small">
+        <h3>Scientific Baccalaureate</h3>
+        <p><strong>François Truffaut High School</strong> (2017 – 2020)</p>
+        <p>Specialization in ISN (Computer Science and Digital Science)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERNSHIPS -->
+  <h2 class="glitter-text">Internships</h2>
+  <div class="row">
+    <div class="col small-col">
+      <div class="card-small">
+        <h3>Web Development Internship</h3>
+        <p><strong>Duration :</strong> July – August 2025</p>
+        <p>Creation of multilingual options and redesign of the website.</p>
+      </div>
+    </div>
+
+    <div class="col small-col">
+      <div class="card-small">
+        <h3>Web Developer</h3>
+        <p><strong>Duration :</strong> November – December 2025</p>
+        <p>Development of a PHP website with user and expert spaces.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <h2 class="glitter-text">Certifications</h2>
+
+  <div class="full-card">
+    <h3>SecNum</h3>
+    <embed src="images/SecNum.pdf" class="pdf-embed" type="application/pdf">
+  </div>
+
+  <div class="full-card">
+    <h3>FreeCodeCamp</h3>
+    <embed src="images/FreeCodeCamp.pdf" class="pdf-embed" type="application/pdf">
+  </div>
+
+  <div class="full-card">
+    <h3>PIX</h3>
+    <embed src="images/PIX.pdf" class="pdf-embed" type="application/pdf">
+  </div>
+
+  <!-- CV -->
+  <h2 class="glitter-text">Resume</h2>
+  <div class="full-card">
+    <h3>My Resume</h3>
+    <embed src="images/Harvini_SOUCE_CV.pdf" class="pdf-embed" type="application/pdf">
+  </div>
+
+  <!-- SUMMARY TABLE -->
+  <h2 class="glitter-text">Summary Table</h2>
+  <div class="full-card">
+    <embed src="images/Synthese.pdf" class="pdf-embed" type="application/pdf">
+  </div>
+
+</main>
+
+<footer>
+  <p>Legal notice • Site map • Social networks</p>
+</footer>
+
+</body>
+</html>

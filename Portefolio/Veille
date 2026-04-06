@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veille Technologique</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #DECE31;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #b5a400;
+}
+
+h3 {
+  color: #E8C71C;
+}
+
+/* TITRES EFFET BRILLANT */
+.glitter-text {
+  background: linear-gradient(90deg, #b8860b, #ffd700, #fff1a8, #ffd700, #b8860b);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glitter 3s infinite linear;
+}
+
+@keyframes glitter {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10%;
+  flex-wrap: wrap;
+}
+
+header .logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #DECE31;
+}
+
+/* MAIN */
+main {
+  padding: 60px 10%;
+}
+
+main section {
+  margin-bottom: 60px;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  color: #000;
+  border-left: 5px solid #DECE31;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* CARTES VEILLE */
+.Veille1, .VeilleA {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border: 1px solid #ffd70055;
+}
+
+.Veille1:hover, .VeilleA:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+  border: 1px solid #ffd700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* IMAGES CENTRÉES */
+.veille-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.veille-images img {
+  border-radius: 8px;
+  max-width: 300px;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/SOUCE.jpg" alt="Photo of SOUCE Harvini">
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="Accueil" class="menu-link">Home</a></li>
+      <li><a href="Parcours_formation" class="menu-link">Education & Training</a></li>
+      <li><a href="Compétences" class="menu-link">Skills</a></li>
+      <li><a href="Projets" class="menu-link">Projects</a></li>
+      <li><a href="Veille" class="menu-link">Technology Watch</a></li>
+      <li><a href="Contact" class="menu-link">Contact</a></li>
+
+      <li>
+       <li><a href="Fr/Accueil" class="lang-btn">Français</a></li>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section>
+<h2 class="glitter-text">Veille Technologique</h2>
+
+<p>
+La veille technologique consiste à surveiller les évolutions techniques et les innovations dans un secteur donné. Elle permet d’anticiper ou de s’informer sur les changements en matière de recherche, développement, brevets, nouveaux produits, matériaux, processus et concepts.
+</p>
+
+<!-- Veille 1 -->
+<div class="Veille1">
+<h3 class="glitter-text">Ma 1ère Veille : interfaces cerveau-ordinateur</h3>
+
+<h4>Les principaux outils de ma veille</h4>
+<p>
+- Technology Magazine – Top 10 Tech Trends of 2025 <br>
+- MIT Technology Review – Emerging Technologies 2025 <br>
+- Neuralink press release, September 2025 <br>
+- Nature Neuroscience, June 2025 — “Non-invasive BCIs for communication and control”
+</p>
+
+<div class="VeilleA">
+<h4>Définition</h4>
+<p>
+Les interfaces cerveau-ordinateur (BCI) permettent une communication directe entre le cerveau humain et un appareil numérique sans passer par les voies nerveuses traditionnelles.
+</p>
+</div>
+
+<div class="VeilleA">
+<h4>Utilisation principale</h4>
+<p>
+Applications : Santé, Divertissement, Travail, Recherche et Défense. <br>
+Exemples : contrôle de prothèses par la pensée, jeux VR/AR mains-libres, détection précoce de maladies neurologiques.
+</p>
+</div>
+
+<div class="VeilleA">
+<h4>Sources</h4>
+<div class="veille-images">
+<a href="https://bluesoft.com/blog/the-top-10-tech-trends-in-2025?utm_source=chatgpt.com"><img src="images/Veille1.png" alt="Veille 1"></a>
+<a href="https://neuralink.com/technology/"><img src="images/Veille.png" alt="Veille 1"></a>
+</div>
+<p>
+<a href="https://www.weforum.org/stories/2026/01/how-we-can-achieve-the-responsible-development-of-brain-computer-interfaces/" target="_blank">World Economic Forum – Responsible development of brain-computer interfaces (2026)</a><br>
+<a href="https://www.un.org/scientific-advisory-board/en/neurotechnology" target="_blank">United Nations – Neurotechnology Brief (2025)</a>
+</p>
+</div>
+</div>
+
+<!-- Veille 2 -->
+<div class="Veille1">
+<h3 class="glitter-text">Ma 2ème Veille : L'amélioration des Frameworks avec l'IA</h3>
+
+<h4>Les principaux outils de ma veille</h4>
+<p>
+- Stack Overflow Developer Survey 2025 <br>
+- GitHub Trends Report 2025 <br>
+- Vercel Developer Conference 2025 <br>
+- echRadar – “Top Web Frameworks to Watch in 2025”
+</p>
+
+<div class="VeilleA">
+<h4>Définition</h4>
+<p>
+Un framework est un ensemble d’outils, bibliothèques et conventions facilitant le développement d’applications logicielles. Il offre une structure de base pour standardiser le code et assurer la maintenabilité.
+</p>
+</div>
+
+<div class="VeilleA">
+<h4>Utilisation principale</h4>
+<p>
+Exemples : intégration IA, microservices, applications temps réel, code partagé mobile/web, assistants intelligents.
+</p>
+</div>
+
+<div class="VeilleA">
+<h4>Sources</h4>
+<div class="veille-images">
+<a href="https://survey.stackoverflow.co/2025/"><img src="images/Veille2.png" alt="Veille 2"></a>
+<a href="https://www.carmatec.com/fr_fr/blog/top-20-software-development-frameworks-to-use/"><img src="images/VeilleB.png" alt="Veille 2"></a>
+</div>
+<p>
+<a href="https://blog.google/technology/developers/dora-report-2025/" target="_blank">Google Developers Blog – DORA Report 2025</a><br>
+<a href="https://resources.github.com/keynotes/github-insights-google-cloud-next-2025/" target="_blank">GitHub Insights – AI-native development trends (2025)</a>
+</p>
+</div>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<div><strong>IRIS</strong> — École Supérieure Informatique</div>
+<p>Adresse : 6-8 Impasse des 2 Cousins, Paris 17e • Tél : 01 23 45 67 89 • contact@ecoleiris.fr</p>
+<p>Mentions légales • Plan du site • Réseaux sociaux : <a href="https://www.instagram.com/irisecole/" target="_blank">Instagram</a></p
