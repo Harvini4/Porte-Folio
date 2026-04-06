@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - SOUCE Harvini</title>
+  <style>
+    /* ===== GLOBAL ===== */
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background: #fff;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      transition: 0.3s;
+      color: #DECE31;
+    }
+
+    a:hover {
+      color: #b5a400;
+    }
+
+    /* ===== GLITTER TITRE ===== */
+    .glitter-text {
+      background: linear-gradient(
+        90deg,
+        #b8860b,
+        #ffd700,
+        #fff1a8,
+        #ffd700,
+        #b8860b
+      );
+      background-size: 300%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glitter 3s infinite linear;
+    }
+
+    @keyframes glitter {
+      0% { background-position: 0%; }
+      100% { background-position: 300%; }
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 10%;
+      flex-wrap: wrap;
+    }
+
+    header .logo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #DECE31;
+    }
+
+    /* ===== MAIN ===== */
+    main {
+      padding: 60px 10%;
+    }
+
+    .titre_contact h2 {
+      font-size: 1.8rem;
+      border-left: 5px solid #DECE31;
+      padding-left: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* ===== FORMULAIRE ===== */
+    .formulaire {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 50px 40px;
+      max-width: 600px;
+      margin: 0 auto 80px auto;
+      border: 1px solid #ffd70055;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    }
+
+    .formulaire:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+      border: 1px solid #ffd700;
+    }
+
+    .elementformulaire form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .elementformulaire label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .elementformulaire input,
+    .elementformulaire textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border 0.2s;
+    }
+
+    .elementformulaire input:focus,
+    .elementformulaire textarea:focus {
+      border-color: #DECE31;
+      outline: none;
+    }
+
+    .elementformulaire textarea {
+      height: 140px;
+      resize: none;
+    }
+
+    .elementformulaire button {
+      background-color: black;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .elementformulaire button:hover {
+      background-color: #595959;
+      transform: scale(1.02);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #111827;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+ <header>
+  <div class="logo">
+    <img src="images/SOUCE.jpg" alt="Photo de SOUCE Harvini">
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="Accueil" class="menu-link">Accueil</a></li>
+      <li><a href="Parcours_formation" class="menu-link">Parcours & Formations</a></li>
+      <li><a href="Compétences" class="menu-link">Compétences</a></li>
+      <li><a href="Projets" class="menu-link">Projets</a></li>
+      <li><a href="Veille" class="menu-link">Veille Technologique</a></li>
+      <li><a href="Contact" class="menu-link">Contact</a></li>
+
+      <!-- VERSION ANGLAISE -->
+      <li>
+       <li><a href="En/Accueil" class="lang-btn" lang="en">English</a></li>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+  <section class="contact">
+    <div class="titre_contact">
+      <h2 class="glitter-text">Contactez-nous</h2>
+    </div>
+    <div class="formulaire">
+      <div class="elementformulaire">
+        <form method="post">
+          <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+          </div>
+
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+          </div>
+
+          <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>Mentions légales • Plan du site • Réseaux sociaux</p>
+</footer>
+
+</body>
+</html>
